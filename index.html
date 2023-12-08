@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojo Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="dojonav">
+      <h1>DojoWeather</h1>
+      <ul>
+        <li onclick="alert('Burbank')">Burbank</li>
+        <li onclick="alert('Chicago')">Chicago</li>
+        <li onclick="alert('Dallas')">Dallas</li>
+      </ul>
+    </div>
+  </nav>
+  <div class="subnav">
+    <h2>San Jose</h2>
+    <div class="show-temp">
+      <label for="changevalues">show temperature in</label>
+      <select onchange="changeMeasure()" name="changevalues" id="change-temp">
+        <option value="Celsius">C*</option>
+        <option value="Fahrenheit">F*</option>
+      </select>
+    </div>
+  </div>
+  <main>
+    <section class="sect1">
+      <p class="card-head-text">Today</p>
+      <img class="weather-icons" src="static/some_rain.png" alt="rainy" height="130">
+      <p>some rain</p>
+      <div class="temp-card-values">
+        <p class="temp1 red">24*</p>
+        <p class="temp2 blue">18*</p>
+      </div>
+    </section>
+    <section class="sect2">
+      <p class="card-head-text">Tomorrow</p>
+      <img class="weather-icons" src="static/some_sun.png" alt="sunny" height="130">
+      <p>some sun</p>
+      <div class="temp-card-values">
+        <p class="temp3 red">27*</p>
+        <p class="temp4 blue">19*</p>
+      </div>
+    </section>
+    <section class="sect3">
+      <p class="card-head-text">Friday</p>
+      <img class="weather-icons" src="static/some_clouds.png" alt="cloudy" height="130">
+      <p>some clouds</p>
+      <div class="temp-card-values">
+        <p class="temp5 red">21*</p>
+        <p class="temp6 blue">16*</p>
+      </div>
+    </section>
+    <section class="sect4">
+      <p class="card-head-text">Saturday</p>
+      <img class="weather-icons" src="static/some_sun.png" alt="sunny" height="130">
+      <p>some sun</p>
+      <div class="temp-card-values">
+        <p class="temp7 red">26*</p>
+        <p class="temp8 blue">21*</p>
+      </div>
+    </section>
+  </main>
+  <div id="cookies" class="remove">
+    <div class="cookies-and-text">
+      <img src="static/cookie.png" alt="cookies icon" height="100">
+      <div class="cookies-text">
+        <p id="cookies-head-txt">Stop! Cookie Time</p>
+        <p>We use cookie (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+    </div>
+  </div>
+  <button onclick="removeCookies()">I Accept</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
