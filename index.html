@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dojo Weather</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav>
     <div class="dojonav">
@@ -20,7 +22,7 @@
   <div class="subnav">
     <h2>San Jose</h2>
     <div class="show-temp">
-      <label for="changevalues">show temperature in</label>
+      <label>show temperature in</label>
       <select onchange="changeMeasure()" name="changevalues" id="change-temp">
         <option value="Celsius">C*</option>
         <option value="Fahrenheit">F*</option>
@@ -70,11 +72,13 @@
       <img src="static/cookie.png" alt="cookies icon" height="100">
       <div class="cookies-text">
         <p id="cookies-head-txt">Stop! Cookie Time</p>
-        <p>We use cookie (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        <p>We use cookie (sadly not the edible ones) to personalize content and ads, to provide social media features
+          and to analyse our traffic. <a href="#">Read more...</a></p>
+      </div>
     </div>
+    <button onclick="removeCookies()">I Accept</button>
   </div>
-  <button onclick="removeCookies()">I Accept</button>
-  </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
