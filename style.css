@@ -89,13 +89,13 @@ select {
   cursor: pointer;
 }
 
-section {
+.section {
   height: 376px;
   width: 178px;
   background-color: rgb(238, 238, 238);
 }
 
-section p {
+.section p {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 20px;
