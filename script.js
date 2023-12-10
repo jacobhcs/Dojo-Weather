@@ -1,35 +1,25 @@
 var cookie = document.querySelector('.remove');
 
-function removeCookies(){
-  if(cookie){
+function removeCookies() {
+  if (cookie) {
     cookie.remove();
   } else {
     console.log('no cookies here');
   }
 }
 
-var temp1 = document.querySelector('.temp1');
-var temp2 = document.querySelector('.temp2');
-var temp3 = document.querySelector('.temp3');
-var temp4 = document.querySelector('.temp4');
-var temp5 = document.querySelector('.temp5');
-var temp6 = document.querySelector('.temp6');
-var temp7 = document.querySelector('.temp7');
-var temp8 = document.querySelector('.temp8');
+var temp = document.querySelectorAll('.temp');
 var select = document.querySelector('#change-temp');
 
-
 function changeMeasure() {
-  if (select){
-    temp1.innerText = 75 + '*';
-    temp2.innerText = 65 + '*';
-    temp3.innerText = 80 + '*';
-    temp4.innerText = 66 + '*';
-    temp5.innerText = 69 + '*';
-    temp6.innerText = 61 + '*';
-    temp7.innerText = 78 + '*';
-    temp8.innerText = 70 + '*';
-  } else {
-    console.log('didnt work');
+  var celsiustemps = [24, 18, 27, 19, 21, 16, 26, 21];
+  for (var i = 0; i < temp.length; i++) {
+    if (select.value == 'F') {
+      temp[i].innerText = Math.floor((temp[i].innerText * (9 / 5)) + 32);
+    } else if (select.value == 'C') {
+      temp[i].innerText = celsiustemps[i];
+    } else {
+      console.log('aint workin')
+    }
   }
 }
