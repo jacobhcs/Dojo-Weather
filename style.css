@@ -5,9 +5,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  height: 2000px;
+}
+
 nav {
   background-color: lightblue;
   height: 90px;
+  /* messing with sticky navbar effect to keep navbar on-screen while scrolling. */
+  /* position: sticky;
+  top: 0; */
 }
 
 .dojonav {
@@ -29,6 +36,10 @@ ul {
   font-size: 20px;
   font-weight: bold;
   gap: 10px;
+}
+
+li {
+  padding: 7px 0px;
   cursor: pointer;
 }
 
@@ -73,6 +84,7 @@ main {
 
 select {
   padding: 8px;
+  cursor: pointer;
 }
 
 section {
@@ -115,8 +127,8 @@ section p {
   align-items: center;
   gap: 30px;
   background-color: rgb(238, 238, 238);
-  position: sticky;
-  left: 258px;
+  position: fixed;
+  left: 250px;
 }
 
 button {
