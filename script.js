@@ -15,7 +15,7 @@ function changeMeasure() {
   var celsiustemps = [24, 18, 27, 19, 21, 16, 26, 21];
   for (var i = 0; i < temp.length; i++) {
     if (select.value == 'F') {
-      temp[i].innerText = Math.floor((temp[i].innerText * (9 / 5)) + 32);
+      temp[i].innerText = Math.round((temp[i].innerText * (9 / 5)) + 32);
     } else if (select.value == 'C') {
       temp[i].innerText = celsiustemps[i];
     } else {
